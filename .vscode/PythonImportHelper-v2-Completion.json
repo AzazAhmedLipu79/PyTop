@@ -61,15 +61,6 @@
     {
         "label": "PyTop",
         "kind": 6,
-        "importPath": "build.lib.pytop.monitor",
-        "description": "build.lib.pytop.monitor",
-        "peekOfCode": "class PyTop:\n    def __init__(self):\n        self.stdscr = curses.initscr()\n        curses.start_color()\n        curses.use_default_colors()\n        curses.init_pair(1, curses.COLOR_GREEN, -1)\n        curses.init_pair(2, curses.COLOR_RED, -1)\n        curses.curs_set(0)  # Hide cursor\n        self.stdscr.timeout(1000)  # Update every 1 second\n        self.stdscr.keypad(True)",
-        "detail": "build.lib.pytop.monitor",
-        "documentation": {}
-    },
-    {
-        "label": "PyTop",
-        "kind": 6,
         "importPath": "pytop.monitor",
         "description": "pytop.monitor",
         "peekOfCode": "class PyTop:\n    def __init__(self):\n        self.stdscr = curses.initscr()\n        curses.start_color()\n        curses.use_default_colors()\n        curses.init_pair(1, curses.COLOR_GREEN, -1)\n        curses.init_pair(2, curses.COLOR_RED, -1)\n        curses.curs_set(0)  # Hide cursor\n        self.stdscr.timeout(1000)  # Update every 1 second\n        self.stdscr.keypad(True)",
