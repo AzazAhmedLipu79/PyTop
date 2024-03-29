@@ -1,0 +1,79 @@
+[
+    {
+        "label": "curses",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "curses",
+        "description": "curses",
+        "detail": "curses",
+        "documentation": {}
+    },
+    {
+        "label": "psutil",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "psutil",
+        "description": "psutil",
+        "detail": "psutil",
+        "documentation": {}
+    },
+    {
+        "label": "unittest",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "unittest",
+        "description": "unittest",
+        "detail": "unittest",
+        "documentation": {}
+    },
+    {
+        "label": "patch",
+        "importPath": "unittest.mock",
+        "description": "unittest.mock",
+        "isExtraImport": true,
+        "detail": "unittest.mock",
+        "documentation": {}
+    },
+    {
+        "label": "PyTop",
+        "importPath": "pytop.monitor",
+        "description": "pytop.monitor",
+        "isExtraImport": true,
+        "detail": "pytop.monitor",
+        "documentation": {}
+    },
+    {
+        "label": "setup",
+        "importPath": "setuptools",
+        "description": "setuptools",
+        "isExtraImport": true,
+        "detail": "setuptools",
+        "documentation": {}
+    },
+    {
+        "label": "find_packages",
+        "importPath": "setuptools",
+        "description": "setuptools",
+        "isExtraImport": true,
+        "detail": "setuptools",
+        "documentation": {}
+    },
+    {
+        "label": "PyTop",
+        "kind": 6,
+        "importPath": "pytop.monitor",
+        "description": "pytop.monitor",
+        "peekOfCode": "class PyTop:\n    def __init__(self):\n        self.stdscr = curses.initscr()\n        curses.start_color()\n        curses.use_default_colors()\n        curses.init_pair(1, curses.COLOR_GREEN, -1)\n        curses.init_pair(2, curses.COLOR_RED, -1)\n        curses.curs_set(0)  # Hide cursor\n        self.stdscr.timeout(1000)  # Update every 1 second\n        self.stdscr.keypad(True)",
+        "detail": "pytop.monitor",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "tests.test_monitor",
+        "description": "tests.test_monitor",
+        "peekOfCode": "def main():\n    monitor = PyTop()\n    try:\n        monitor.run()\n    finally:\n        curses.endwin()\nif __name__ == '__main__':\n    # unittest.main()\n    main()",
+        "detail": "tests.test_monitor",
+        "documentation": {}
+    }
+]
