@@ -1,4 +1,4 @@
-# PyTop
+# PyTop_B
 
 PyTop is a simple system resource monitor built with Python using the curses library.
 
